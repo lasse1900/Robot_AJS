@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20230319 14:26:40.216" rpa="false" schemaversion="3">
+<suite id="s1" name="Oikotie 3" source="C:\coding\Robot_tests_for_AJS\oikotie_3.robot">
+<test id="s1-t1" name="Main test" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browserName}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230319 14:26:40.414" level="INFO">Opening browser 'chrome' to base url 'https://tyopaikat.oikotie.fi/'.</msg>
+<status status="PASS" starttime="20230319 14:26:40.401" endtime="20230319 14:26:42.991"/>
+</kw>
+<kw name="Cookies">
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id:${IFRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230319 14:26:42.992" level="INFO">Selecting frame 'id:sp_message_iframe_761217'.</msg>
+<status status="PASS" starttime="20230319 14:26:42.992" endtime="20230319 14:26:43.010"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${ACCEPTCOOKIES}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230319 14:26:43.011" level="INFO">Clicking button '//button[@title='Hyväksy kaikki evästeet']'.</msg>
+<status status="PASS" starttime="20230319 14:26:43.011" endtime="20230319 14:26:43.072"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230319 14:26:43.072" endtime="20230319 14:26:43.076"/>
+</kw>
+<status status="PASS" starttime="20230319 14:26:42.991" endtime="20230319 14:26:43.076"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230319 14:26:43.076" endtime="20230319 14:26:45.177"/>
+</kw>
+<status status="PASS" starttime="20230319 14:26:40.401" endtime="20230319 14:26:45.178"/>
+</test>
+<status status="PASS" starttime="20230319 14:26:40.216" endtime="20230319 14:26:45.179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Oikotie 3">Oikotie 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

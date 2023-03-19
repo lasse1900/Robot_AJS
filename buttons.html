@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		function btnA() {
+			document.getElementById('result').innerHTML =
+			"You've successfully clicked on the button";
+		}
+	
+		function btnB() {
+			document.getElementsByClassName('active').click();
+		}
+	</script>
+</head>
+
+<body>
+	<h1 style="color:green">
+		GeeksforGeeks
+	</h1>
+	<h3>Generates a TypeError</h3>
+	<div id="result"></div>
+	<button class="active"
+			onclick="btnA();">
+		Button A
+	</button>
+	<button class="trigger"
+			onclick="btnB();">
+		Button B
+	</button>
+</body>
+</html>
